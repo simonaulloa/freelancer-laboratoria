@@ -13,3 +13,40 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+
+.col-12 {
+	width: 99%;
+}
+.col-11 {
+	width: 90.6667%;
+}
+.col-10 {
+	width: 79.3334%;
+}
+.col-9 {
+	width: 74%;
+}
+.col-8 {
+	width: 66.6667%;
+}
+.col-7 {
+	width: 58.3334%;
+}
+.col-6 {
+	width: 49%;
+}
+.col-5 {
+	width: 40.6667%;
+}
+.col-4 {
+	width: 32.3334%;
+}
+.col-3 {
+	width: 24%;
+}
+.col-2 {
+	width: 15.6667%;
+}
+.col-1 {
+	width: 7.3334%;
+}
