@@ -19,15 +19,14 @@
 }
 
  body {
-  /* Establece la fuente de Google aquí */
     margin: 0 auto;
     font-size: 16px;
     line-height: 1.71429;
     background-color: #fff;
-    font-size: 14px;
+
 }
-a { /*nav*/
-    color: #fff;
+a { /*nav*/    
+    color: whitesmoke;
   	text-decoration: none;
 }
 
@@ -53,6 +52,7 @@ header{
   top: 0;
 }
  .container{
+
  	background-color: #2c3e50;
  	padding-right: 150px;
  	padding: 30px;
@@ -66,9 +66,20 @@ header{
  	background-color: #18bc9c;
  }
   #portafolio .row{
+  text-align: center;
  	width: 100%;
  	height: 700px;
+ 
  }
+.col-4{
+  cursor: pointer;
+  max-width: 30%;
+   display: inline-block;
+   margin: 3px;
+ }
+ .col-4:hover{ /*fondo semi-transparente que no resulto xD*/
+  background-color: rgba(255,255,255,0.2);
+}
   #about .row{
  	width: 100%;
  	height: 700px;
@@ -84,8 +95,79 @@ header{
  	background-color:#2c3e50;
  }
 
- footer{
- 	width: 100%;
- 	height: 100px;
- 	background-color:#233140;
+
+ .primero{
+  font-size: 3em;
+  color: whitesmoke;
  }
+  .primerode{
+  font-size: 1em;
+  color: whitesmoke;
+ }
+
+ .col-4 img{
+  display: inline-block;
+  /*max-width: 100% ajusta el ancho de tu imagen a la columna, esto siempre que la imagen sea mas grande*/
+  width: 100%; /*ajusta la imagen si es mas chica*/
+}
+
+ footer{
+  width: 100%;
+  height: 100px;
+  background-color:#233140;
+ }
+
+
+ /*modal*/
+
+.box-work{ /*para que el cursor cambie a manito*/
+  cursor: pointer;
+}
+.box-work:hover{ /*fondo semi-transparente*/
+  background-color: rgba(255,255,255,0.2);
+}
+
+/*Modal*/
+.col-4-modal{ /* fondo del modal cuadro donde va la imagen*/
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.col-4-modal .modal-body{   /*ajustes de la imagen dentro del modal*/
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px;
+
+  /*position: fixed;*/
+}
+
+.col-4-modal .modal-body h5, /*color tipo ambas h5 h6*/
+.col-4-modal .modal-body h6{
+  color: whitesmoke;
+}
+
+.col-4-modal .modal-body h5{ /*tamaño letra h5*/
+  font-size: 2em;
+}
+.col-4-modal .modal-body h6{/* tamaño letra h6*/
+  font-size: 1em;
+}
+
+.col-4-modal .close{ /*tamaño close? y de puntero a mano*/
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.col-4-modal .close img{ /*tamaño x close*/
+  width: 60px;
+}
+
+.hide{ /* ocultar??*/
+  display: none;
+}
